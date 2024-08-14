@@ -6,7 +6,7 @@ interface FooterProps {}
 
 const Footer: FC<FooterProps> = () => {
   return (
-    <Container fluid className="bg-light py-4">
+    <Container fluid className=" py-4">
       <Row className="text-center text-md-left">
         <Col xs={12} md={4} lg={3}>
           <h6 className="text-uppercase">Resources</h6>
@@ -43,8 +43,11 @@ const Footer: FC<FooterProps> = () => {
         </Col>
       </Row>
       <Row className="text-center mt-4">
-        <Col>
+        <Col className='d-flex m-2 gap-3 justify-content-center '>
           <p>&copy; 2024 Nike, Inc. All rights reserved</p>
+          <NavLink>Terms of Sale </NavLink><br />
+          <NavLink>Terms of Use </NavLink><br />
+          <NavLink>Nike Privacy Policy </NavLink>
         </Col>
       </Row>
     </Container>

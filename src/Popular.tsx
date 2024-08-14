@@ -20,33 +20,37 @@ const Popular: FC<PopularProps> = ({}) => {
   };
 
   return (
-    <Container fluid className="px-3">
-      <Row className="align-items-center my-5">
-        <Col xs={8} sm={10}>
-          <h3>Popular Right Now</h3>
+    <Container className="px-3">
+      <Row className='align-items-center'>
+        <Col xs={10} sm={10} md={11}>
+          <h3 className='ms-2 mt-3'>Popular Right Now</h3>
         </Col>
-        <Col xs={4} sm={2} className="d-flex justify-content-end">
-          <Button
-            variant="secondary"
-            className="rounded-pill me-2"
-            onClick={scrollLeft}
-          >
-            <MdKeyboardArrowLeft />
-          </Button>
-          <Button
-            variant="secondary"
-            className="rounded-pill"
-            onClick={scrollRight}
-          >
-            <MdKeyboardArrowRight />
-          </Button>
+        <Col xs={2} sm={2} md={1}>
+          <div className='d-flex justify-content-end'>
+            <button 
+              type="button" 
+              className="btn btn-secondary rounded-pill" 
+              onClick={scrollLeft}
+              style={{ width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+            >
+              <MdKeyboardArrowLeft />
+            </button>
+            <button 
+              type="button" 
+              className="btn btn-secondary ms-1 rounded-pill" 
+              onClick={scrollRight}
+              style={{ width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+            >
+              <MdKeyboardArrowRight />
+            </button>
+          </div>
         </Col>
       </Row>
 
       <div
         ref={scrollRef}
-        className="d-flex overflow-auto"
-        style={{ scrollBehavior: 'smooth' }}
+        className="d-flex overflow-auto "
+        style={{ scrollBehavior: 'smooth',scrollbarWidth:'none' }}
       >
         {[
           {
@@ -107,7 +111,7 @@ const Popular: FC<PopularProps> = ({}) => {
           },
           {
             title: 'Nike Phantom Luna 2 Elite Electric',
-            text: 'FG High-Top Football Boot',
+            text: 'FG High-Top Football Boot',  
             price: '₹ 24 895.00',
             imgSrc:
               'https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.3/h_466,c_limit/641c2ad1-800d-469a-9b5b-55b69ec6be60/phantom-luna-2-elite-electric-fg-high-top-football-boot-X0prFC.png',

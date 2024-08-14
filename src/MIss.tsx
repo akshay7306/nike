@@ -5,9 +5,13 @@ interface MIssProps {}
 
 const MIss: FC<MIssProps> = () => {
   return (
-    <Container fluid className='mt-5'>
-      <h3 >Don't Miss</h3>
-      <Row className='g-0 mt-5'>
+    <Container className='mt-5'>
+      <Row className='mt-5'>
+        <Col>
+          <h3 className='mt-3'>Don't Miss</h3>
+        </Col>
+      </Row>
+      <Row className='g-0 mt-3'>
         <Col lg={6} md={12} className='p-0'>
           <img
             className='img-fluid w-100'
@@ -24,12 +28,12 @@ const MIss: FC<MIssProps> = () => {
         </Col>
       </Row>
       <div className='text-center mt-4'>
-        <p>'Sol'</p>
+        <p className='fw-medium'>'Sol'</p>
         <h1 className='fw-bolder'>AIR JORDAN 39</h1>
         <p>
           Not just another shoe. It's the Air Jordan 39. HIS 39. Crafted to honor MJ's domination of the game. Exactly what you need to keep 'em shook.
         </p>
-        <Button className='rounded-pill' variant="dark">
+        <Button className='rounded-pill fw-semibold' variant="dark">
           Shop
         </Button>
       </div>

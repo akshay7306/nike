@@ -1,5 +1,5 @@
 import React, { FC, useRef } from 'react';
-import { Button, Card, Col, Row } from 'react-bootstrap';
+import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 
 interface MemberProps {}
@@ -21,6 +21,9 @@ const Member: FC<MemberProps> = () => {
 
   return (
     <>
+
+    <Container>
+
       <Row className='align-items-center'>
         <Col xs={10} sm={10} md={11}>
           <h3 className='ms-3 mt-3'>Member Benefits</h3>
@@ -29,15 +32,17 @@ const Member: FC<MemberProps> = () => {
           <div className='d-flex justify-content-end'>
             <button 
               type="button" 
-              className="btn btn-secondary rounded-pill" 
+              className="btn btn-secondary rounded-pill me-2" 
               onClick={scrollLeft}
+              style={{ width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
             >
               <MdKeyboardArrowLeft />
             </button>
             <button 
               type="button" 
-              className="btn btn-secondary ms-1 rounded-pill" 
+              className="btn btn-secondary  rounded-pill me-3" 
               onClick={scrollRight}
+              style={{ width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
             >
               <MdKeyboardArrowRight />
             </button>
@@ -45,7 +50,7 @@ const Member: FC<MemberProps> = () => {
         </Col>
       </Row>
 
-      <div className='m-3 gap-3 d-flex overflow-auto' ref={scrollRef}>
+      <div style={{scrollbarWidth:'none'}} className='m-3 gap-3 d-flex overflow-auto' ref={scrollRef}>
         <Card style={{ maxWidth: '30rem',flex:'0 0 70%' }} className="text-white">
           <Card.Img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_672,c_limit/cb28c551-b85b-479f-8fc3-40ad4e7c9ca4/nike-just-do-it.jpg" alt="Card image" />
           <Card.ImgOverlay className='d-flex align-items-end'>
@@ -112,6 +117,7 @@ const Member: FC<MemberProps> = () => {
           </Card.ImgOverlay>
         </Card>
       </div>
+      </Container>
     </>
   );
 };

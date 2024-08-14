@@ -10,10 +10,19 @@ const Home: FC<HomeProps> = ({}) => {
   return (
     <>
     <Container>
-      <img className='ms-5 fluid'
-       height='500'
-       width='94%'  
+
+
+      <Row>
+
+    <Col xs={12} md={12}>
+    
+    <img className='img-fluid'
       src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_1714,c_limit/b29b4905-2da2-48b3-bda8-9eb33333795c/nike-just-do-it.png " alt="no image" />
+    
+    </Col>
+
+      </Row>
+
       
     <div>
 
@@ -25,8 +34,8 @@ const Home: FC<HomeProps> = ({}) => {
 
     <div className='d-flex justify-content-center gap-2 mt-4'>
 
-    <Button className='rounded-pill' variant="dark">Experience Air</Button>
-    <Button className='rounded-pill' variant="dark">Shop Air</Button>
+    <Button className='rounded-pill fw-semibold' variant="dark">Experience Air</Button>
+    <Button className='rounded-pill fw-semibold' variant="dark">Shop Air</Button>
 
    
 
