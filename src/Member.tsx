@@ -54,7 +54,7 @@ const Member: FC<MemberProps> = () => {
         <Card style={{ maxWidth: '30rem',flex:'0 0 70%' }} className="text-white">
           <Card.Img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_672,c_limit/cb28c551-b85b-479f-8fc3-40ad4e7c9ca4/nike-just-do-it.jpg" alt="Card image" />
           <Card.ImgOverlay className='d-flex align-items-end'>
-            <div>
+            <div className='ms-3 mb-3'>
               <Card.Text>Member Product</Card.Text>
               <Card.Title>Your Exclusive Access</Card.Title>
               <Button className='rounded-pill' variant="light">Shop</Button>
@@ -65,7 +65,7 @@ const Member: FC<MemberProps> = () => {
         <Card style={{ maxWidth: '30rem',flex:'0 0 70%' }} className="text-white">
           <Card.Img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_672,c_limit/100ca749-1a94-4f98-bc43-a58e7e9cdbcf/nike-just-do-it.png" alt="Card image" />
           <Card.ImgOverlay className='d-flex align-items-end'>
-            <div>
+            <div className='ms-3 mb-3'>
               <Card.Text>Nike By You</Card.Text>
               <Card.Title>Your Customisation Service</Card.Title>
               <Button className='rounded-pill' variant="light">Customise</Button>
@@ -76,7 +76,7 @@ const Member: FC<MemberProps> = () => {
         <Card style={{ maxWidth: '30rem',flex:'0 0 70%' }} className="text-white">
           <Card.Img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_672,c_limit/512ededc-208b-4399-8369-88859a3c3b8e/image.png" alt="Card image" />
           <Card.ImgOverlay className='d-flex align-items-end'>
-            <div>
+            <div className='ms-3 mb-3'>
               <Card.Text>Member Rewards</Card.Text>
               <Card.Title>How We Say Thank You</Card.Title>
               <Button className='rounded-pill' variant="light">Celebrate</Button>
@@ -87,7 +87,7 @@ const Member: FC<MemberProps> = () => {
         <Card style={{ maxWidth: '30rem',flex:'0 0 70%' }} className="text-white">
           <Card.Img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_672,c_limit/a9767bce-db10-41ff-9eb5-f5daf8bbb3e6/nike-just-do-it.png" />
           <Card.ImgOverlay className='d-flex align-items-end'>
-            <div>
+            <div className='ms-3 mb-3'>
               <Card.Text>Member Days</Card.Text>
               <Card.Title>A Celebration Of You</Card.Title>
               <Button className='rounded-pill' variant="light">Learn more</Button>
@@ -98,7 +98,7 @@ const Member: FC<MemberProps> = () => {
         <Card style={{ maxWidth: '30rem',flex:'0 0 70%' }} className="text-white">
           <Card.Img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_672,c_limit/37b262a3-c8c7-49e8-a29f-8d46bc8ab950/nike-just-do-it.jpg" />
           <Card.ImgOverlay className='d-flex align-items-end'>
-            <div>
+            <div className='ms-3 mb-3'>
               <Card.Text>Sport & Wellness App</Card.Text>
               <Card.Title>Movement Where You Are</Card.Title>
               <Button className='rounded-pill' variant="light">Move</Button>
@@ -109,7 +109,7 @@ const Member: FC<MemberProps> = () => {
         <Card style={{ maxWidth: '30rem',flex:'0 0 70%' }} className="text-white">
           <Card.Img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_672,c_limit/c17ae904-9307-4575-8ac1-ad08adafe17f/nike-just-do-it.jpg" />
           <Card.ImgOverlay className='d-flex align-items-end'>
-            <div>
+            <div className='ms-3 mb-3'>
               <Card.Text>SNKRS</Card.Text>
               <Card.Title>Your Ultimate Sneakers Community</Card.Title>
               <Button className='rounded-pill' variant="light">Explore</Button>

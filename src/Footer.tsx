@@ -6,8 +6,8 @@ interface FooterProps {}
 
 const Footer: FC<FooterProps> = () => {
   return (
-    <Container fluid className=" py-4">
-      <Row className="text-center text-md-left">
+    <Container  className=" py-4 ">
+      <Row className=" text-md-left ms-2">
         <Col xs={12} md={4} lg={3}>
           <h6 className="text-uppercase">Resources</h6>
           <div className='mt-3'>
@@ -38,8 +38,8 @@ const Footer: FC<FooterProps> = () => {
             <NavLink href="#">Sustainability</NavLink>
           </div>
         </Col>
-        <Col xs={12} md={12} lg={3} className="d-flex  justify-content-center mt-3 mt-md-0">
-          <NavLink href="#"> <CiGlobe /> India</NavLink>
+        <Col xs={12} md={12} lg={3} className="d-flex  justify-content- mt-3 mt-md-0">
+          <NavLink href="#" className='ms-5'> <CiGlobe /> India</NavLink>
         </Col>
       </Row>
       <Row className="text-center mt-4">
